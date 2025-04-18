@@ -37,21 +37,44 @@ console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
+
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
 let sum = num1 + num2;
 console.log("The sum of 5 and 10 is " + sum);
 
+const addNumbers =function (num1, num2) {
+   return `The sum of ${num1} and ${num2} is  ${(num1 + num2)}`;
+};
+console.log(addNumbers(5,7));
+
+
+
 // Script 3 - Product calculation
 let product = num1 * num2;
 console.log("The product of 5 and 10 is " + product);
 
+let multiplyNum = function (num1, num2) {
+   return ` The product of ${num1} and ${num2} is ${(num1 * num2)}`;
+};
+
+console.log(multiplyNum(2,4));
+
 // Script 4 - Print names from a list
-let names = ["Alice", "Bob", "Charlie"];
-console.log("Names in the list:");
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
+
+
+
+
+
+function nameList(items, name) {
+   console.log(name);
+   for (let i =0; i<names.length; i++) {
+      return `Names in List: ${items[i]}`;
 }
+};
+
+let names = ["Alice", "Bob", "Charlie"];
+nameList(names, "Names in the list: ");
 
 /*
 ===========================================

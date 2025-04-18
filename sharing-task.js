@@ -30,8 +30,14 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Takes a name and a role (e.g., "Alice", "speaker")
 // - Returns a string in the format: "Name: Alice, Role: Speaker"
 
+
+
 // Steps:
 // 1. Define the function with two parameters.
+function generateAttendeeBadge(name, role) {
+    return `Name: ${name}, Role: ${role}`;
+}
+console.log(generateAttendeeBadge("Alice", "Speaker"));
 // 2. Format the output string properly.
 // 3. Capitalize the role if needed.
 // 4. Return the result.
@@ -51,6 +57,20 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. If so, apply a 10% discount.
 // 4. Return the final total.
 
+function calculateEventCost(numOfAttendees, costOfAttendee) {
+    
+        if (numOfAttendees >= 100) {
+            initialCost = (numOfAttendees*costOfAttendee) * .9;
+            return `The total cost is ${initialCost}`;
+
+        }else {
+            finalCost = numOfAttendees * costOfAttendee;
+            return `The total cost is ${finalCost}`;
+        }
+
+};
+
+console.log(calculateEventCost(100,7));
 
 // ============================================
 // 🧩 Task 3: Validate Email
@@ -63,6 +83,16 @@ reusable functions that solve specific tasks. This activity encourages:
 // Steps:
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
+
+function validateEmail(email) {
+    if (email.includes("@") && email.includes(".")) {
+        return "Email is valid";
+    }else {
+        return "Email is invalid";
+    }
+};
+
+console.log(validateEmail("test@google.com"));
 
 
 // ============================================
