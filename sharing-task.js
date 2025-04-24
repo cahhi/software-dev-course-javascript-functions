@@ -86,9 +86,9 @@ console.log(calculateEventCost(100,7));
 
 function validateEmail(email) {
     if (email.includes("@") && email.includes(".")) {
-        return "Email is valid";
+        return true;
     }else {
-        return "Email is invalid";
+        return false;
     }
 };
 

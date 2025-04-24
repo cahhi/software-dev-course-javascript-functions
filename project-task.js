@@ -37,6 +37,14 @@ console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
+function greet(name) {
+   console.log(`Welcome ${name}`);
+}
+
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+
 
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
